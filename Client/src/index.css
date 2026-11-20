@@ -1,0 +1,26 @@
+/* Import the Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Apply consistent box sizing to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define the global body styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* Remove default link underlines */
+a {
+    text-decoration: none;
+}
+
+/* Ensure the application occupies the full viewport */
+#root {
+    min-height: 100vh;
+}

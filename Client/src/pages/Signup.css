@@ -1,0 +1,193 @@
+
+/* Import the Inter font for a clean and professional interface */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Apply consistent sizing to all signup elements */
+.signup-page,
+.signup-page * {
+    box-sizing: border-box;
+}
+
+/* Main signup page background */
+.signup-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 20px;
+    background: linear-gradient(135deg, #f0fdfa, #f8fafc 55%, #e0f2f1);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Signup form card */
+.signup-container {
+    width: 100%;
+    max-width: 510px;
+    padding: 32px 38px;
+    background: #ffffff;
+    border: 1px solid #e5eeee;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(15, 118, 110, 0.09);
+}
+
+/* Brand section */
+.signup-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 22px;
+    color: #0f766e;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* Brand icon */
+.signup-brand-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #e0f2f1;
+    color: #0f766e;
+}
+
+/* Signup heading */
+.signup-heading {
+    margin: 0 0 7px;
+    color: #172b2a;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+}
+
+/* Form field wrapper */
+.signup-field {
+    display: block;
+    margin-bottom: 15px;
+    color: #344b49;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Input wrapper */
+.signup-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 45px;
+    margin-top: 7px;
+    padding: 0 13px;
+    border: 1px solid #dce8e6;
+    border-radius: 9px;
+    background: #fbfdfd;
+    color: #0f766e;
+    transition: 0.2s ease;
+}
+
+/* Focus effect */
+.signup-input-wrapper:focus-within {
+    border-color: #14b8a6;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.10);
+}
+
+/* Input and select elements */
+.signup-input-wrapper input,
+.signup-input-wrapper select {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #263b39;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+/* Placeholder styling */
+.signup-input-wrapper input::placeholder {
+    color: #9aabaa;
+}
+
+/* Password visibility button */
+.signup-password-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border: none;
+    background: transparent;
+    color: #718582;
+    cursor: pointer;
+}
+
+/* Submit button */
+.signup-submit-btn {
+    width: 100%;
+    height: 46px;
+    margin-top: 7px;
+    border: none;
+    border-radius: 9px;
+    background: #0f766e;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Submit button hover */
+.signup-submit-btn:hover {
+    background: #0d625c;
+    box-shadow: 0 5px 14px rgba(15, 118, 110, 0.18);
+    transform: translateY(-1px);
+}
+
+/* Login prompt */
+.signup-login-prompt {
+    margin-top: 20px;
+    color: #647572;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Login link */
+.signup-login-prompt a {
+    color: #0f766e;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.signup-login-prompt a:hover {
+    text-decoration: underline;
+}
+
+/* Security note */
+.signup-security {
+    margin-top: 17px;
+    color: #82918f;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 520px) {
+    .signup-page {
+        padding: 18px 12px;
+    }
+
+    .signup-container {
+        padding: 26px 21px;
+        border-radius: 14px;
+    }
+
+    .signup-heading {
+        font-size: 22px;
+    }
+}
